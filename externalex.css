@@ -1,0 +1,194 @@
+#im1{
+    height: 151px;
+    width: 264px;
+    /* align-items: center; */
+}
+#d1{
+    padding: 20px;
+}
+
+#z{
+    margin-left: 580px;
+    margin-top: 200px;
+    /* margin-bottom: 20px; */
+    color: brown;
+}
+#z:hover{
+    color: blue;
+}
+#y{
+    margin-left: 50px;
+    margin-top: 200px;
+    color: brown;
+}
+#x{
+    margin-left: 50px;
+    margin-top: 200px;
+    color: brown;
+}
+#x:hover{
+    color: blue;
+}
+#w{
+    margin-left: 50px;
+    margin-top: 200px;
+    color: brown;
+}
+#v{
+    margin-left: 50px;
+    margin-top: 200px;
+    color: brown;
+}
+#d2{
+    background-image: url(./images/cup.jpg);
+    background-size: cover;
+    color:white;
+    text-align: left;
+    /* height: 300px;  */
+    /* width: 100%; */ 
+    padding: 30px;
+    
+}
+h2{
+    text-align: center;
+    color: blanchedalmond;
+    text-shadow: 4px 4px rgb(124, 31, 31);
+}
+.col{
+    height: 320px;
+    width: 20%; 
+    background-color:rgb(83, 78, 78) ;
+    color: rgb(231, 213, 213);
+    box-shadow: 3px 3px rgb(139, 127, 127);
+    border-radius: 50px;
+ }
+ .col:hover{
+    height: 330px;
+    width: 21%;
+}
+/* #r:hover{
+    color: blue;
+} */
+p{
+    text-align: center;
+    padding: 5px;
+    font-size: larger;
+}
+button{
+    
+    background-color: blueviolet;
+    color: white;
+    border: blueviolet 1px solid;
+   
+}
+#b4{
+    margin-top: 9px;
+    margin-left: 110px;
+    border-radius:23px ;
+    height: 40;
+    width:115 ;
+}
+#b3{
+    margin-top: 8px;
+    margin-left: 110px;
+    border-radius:23px ;
+    height: 40;
+    width:115 ;
+}
+#b2{
+    margin-top: 4px;
+    margin-left: 110px;
+    border-radius:23px ;
+    height: 40;
+    width:115 ;
+}
+#b1{
+    margin-top: 6px;
+    margin-left: 110px;
+    border-radius:23px ;
+    height: 40;
+    width:115 ;
+}
+
+
+ #im2{
+     width: 100%;
+     height: 200px;
+     border-radius: 59px;
+ }
+ 
+ #d3{
+     padding-top: 30px;
+     padding-bottom: 5px;
+        /* height: 430px; */
+        width: 100%;
+        /* background-color: rgb(245, 187, 235); */
+        display: flex;
+        justify-content: space-evenly;
+        align-items: flex-start;
+        background-color: burlywood;
+        color: rgb(117, 58, 58);
+ }
+ h3{      
+text-align: center;
+ }
+ #d4{
+     text-align: center;
+     font-size: larger;
+     color: brown;
+ }
+
+ #d6{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    /* background-image: url(./images/cofrt.jpg);
+    background-size: cover; */
+    padding: 20px;
+ }
+ #d7{
+     border: 2px solid rgb(160, 48, 48);
+     padding: 2px;
+     background-color: gray;
+     color: blanchedalmond;
+     
+ }
+ #b10{
+     height: 20px;
+     width: 30px;
+     background-color: blueviolet;
+     color: white;
+     /* margin-left: 250px; */
+ }
+ #d8{
+     height:100%;
+     width:50%;
+     border: 2px solid rgb(160, 48, 48);
+     padding: 25px;
+     text-align: center;
+     background-color: gray;
+     color: blanchedalmond;
+ }
+ form{
+     padding: 20px;
+     
+ }
+ #b9{
+     margin-left: 51px;
+ }
+ h1{
+     text-align: center;
+ }
+
+#d5{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    background-color: burlywood;
+}
+#fo{
+    font-family: 'Courier New', Courier, monospace;
+    font-style: italic;
+    color: rgb(49, 10, 10);
+    text-align: left;
+}
