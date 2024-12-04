@@ -1,0 +1,103 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="Registration.css">
+    <script defer src="Registration.js"></script>
+</head>
+<body>
+    <div class="container">
+        <form id="form" action="/">
+            <h1>Sign Up Form</h1>
+            <div class="input-control">
+                <label for="id1">First Name</label>
+                <input name="id1" type="text" id="id1">  
+                <div class="error"></div>         
+            </div>
+            <div class="input-control">
+                <label for="id2">Last Name</label>
+                <input name="id2" type="text" id="id2">
+                <div class="error"></div> 
+            </div>
+            <div class="input-control">
+                <label for="id3">Date of birth</label>
+                <input type="date" name="id3" id="id3">  
+                <div class="error"></div>           
+            </div>
+            <div class="input-control">
+                <label for="id4">Age</label>
+                <input type="number" name="id4" id="id4">     
+                <div class="error"></div>    
+            </div>
+            <div class="input-control">
+                
+                <label for="id5">Gender</label>
+                <div class="input-control">
+                <input type="radio" id="id5" value="Male" name="rb1">Male                            
+                <input type="radio" id="id5" name="rb1" value="female">Female
+                </div>
+               
+            </div>
+            <div class="input-control">
+                <label for="email">Email</label>
+                <input id="email" name="email" type="text">
+                <div class="error"></div>
+                </div>
+            <div class="input-control">
+                <label for="id6">Phone number</label>
+                <input type="tel" id="id6">
+                <div class="error"></div> 
+                </div> 
+                <div class="input-control">
+                    <label for="id8">Adress</label>
+                    <textarea name="" id="id8" class="b1" cols="40" rows="4" style="border-color: white"></textarea>
+                    <div class="error"></div> 
+                </div>
+
+                <div class="input-control">
+                    <label for="">State</label>
+                    <select class="b1" name="slct1" id="slct1" onchange="populate(this.id,'slct2')" style="border-color: white;" >
+                        <option value="">--Choose State--</option>
+                        <option value="kerala">Kerala</option>
+                        <option value="tamilnadu">Tamilnadu</option>
+                        <option value="karnataka">Karnataka</option>
+                    </select>
+                    <div class="error"></div> 
+                    </div>
+        
+                <div class="input-control">           
+                    <label for="">City</label>
+                    <select class="b1" name="slct2" id="slct2" style="border-color: white;"></select> 
+                    <div class="error"></div> 
+                </div>
+        
+
+            <div class="input-control">
+                <label for="username">Username</label>
+                <input id="username" name="username" type="text">
+                <div class="error"></div>
+            </div>
+            
+                <div class="input-control">
+                    <label for="password">Password</label>
+                    <input id="password"name="password" type="password">
+                    <div class="error"></div>
+                </div>
+                <div class="input-control">
+                    <label for="password2">Confirm Password</label>
+                    <input id="password2"name="password2" type="password">
+                    <div class="error"></div>
+                </div>
+                <button type="submit">sign up</button>
+                <p>
+                    <label>Already a member?</label><a href="./loginjs.html">Login now</a>
+                </p>
+            </form>
+        </div>
+    </body>
+    </html>

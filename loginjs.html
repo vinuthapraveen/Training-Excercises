@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./loginjs.css">
+    <script>
+        function setError(input,message)
+{
+    input.style.border="1px solid red";
+    const formcontrol=input.parentElement;
+    const small=formcontrol.querySelector("small");
+    small.className="smallshown";
+    small.innerHTML=message;
+    let submitbtn=document.getElementById("submit");
+    submitbtn.disabled=true;
+}
+function setSuccess(input){
+        const formcontrol=input.parentElement;
+        input.style.border="2px solid green";
+        const small=formcontrol.querySelector("small");
+        small.className="smallhidden";
+        small.innerHTML="";
+        let submitbtn=document.getElementById("submit");
+    submitbtn.disabled=false;
+}
+        function usernamevalid()
+     {
+        let username=document.getElementById("username");
+        if(username.value.trim()==="")
+        {
+            setError(username,"username empty");
+        }
+        else{
+            setSuccess(username);
+        }
+      }
+      function passwordvalid()
+{
+        let password=document.getElementById("password");
+        if(password.value.trim()==="")
+        {
+            setError(password,"password empty");
+        }
+        else{
+            setSuccess(password);
+        }
+}
+    </script>
+</head>
+<body>
+    <center>
+  
+        <!-- <div style= "background-color:white;width: 300px;height:350px; border-radius: 4px; box-shadow: 7px 7px 7px 7px rgb(139, 127, 127);">        -->
+       <div class="div1">
+            <form>
+        
+            <!-- <div style="margin-top: 100px; background-color: blueviolet; height: 60px;"> -->
+            <div class="div2">
+                <h1 >Login Form</h1>
+        </div>
+        <p>
+            <input type="text" class="input" id="username" placeholder="Email Address" onfocusout="return usernamevalid()">
+            <small></small>
+        </p>
+    <p>
+    <input type="password" class="" id="password" placeholder="Password" onfocusout="return passwordvalid()">
+    <small></small>
+</p>
+<p>
+    <input type="checkbox" name="b1"><label for="b1">Remember me</label>
+
+    <a href="#">Forgot password?</a></p>
+    <p>
+    <button  id="submit" disabled>Login</button></p>
+    <p>
+    <label>Not a member?</label><a href="./Registration.html">Signup now</a>
+</p>
+
+
+</form>
+</div>
+</center>
+</body>
+</html>
